@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BEFORE AND AFTER PSEUDO SELECTORS</title>
+    <style>
+        section {
+            height: 344px;
+            display: flex;
+            flex-direction: column;
+            margin: 3px;
+            justify-content: center;
+        }
+
+        body {
+            background-color: rgb(14, 107, 188);
+            color: rgb(130, 228, 11);
+            margin: 0px;
+            padding: 2px;
+        }
+
+        .navbar {
+            display: flex;
+            font-size: medium;
+        }
+
+        li {
+            list-style: none;
+            padding: 34px;
+            cursor: pointer;
+        }
+
+        section:before {
+            content: this is a content;
+        }
+
+        body ::before {
+            background: url(https://unsplash.com/photos/xpo-tj20Co8) no-repeat center center;
+            content: none;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: auto;
+            top: 0;
+            left: 0;
+            opacity: 0.3;
+        } 
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="">
+                <li class="item"> Home</li>
+                <li class="item"> About</li>
+                <li class="item"> Services</li>
+                <li class="item"> Contact us</li>
+            </ul>
+        </nav>
+        <section>
+            <h3>welcome to my coding world</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi minima numquam, culpa molestiae
+                aperiam eum libero pariatur dignissimos a nostrum impedit id ea laboriosam quia voluptas veritatis,
+                natus quas illo error deserunt? Ipsam accusantium dolorem totam, soluta facere sapiente at delectus eius
+                impedit, voluptas maiores.</p>
+        </section>
+    </header>
+</body>
+
+</html>

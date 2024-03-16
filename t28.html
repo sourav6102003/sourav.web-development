@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLEX BOX</title>
+    <style>
+        .container1 {
+            height: 23px;
+            width: 40px;
+            border: 2px solid black;
+            display: flex;
+            flex-direction: row;
+            flex-direction: column;
+            flex-direction: row-reverse;
+        }
+
+        .container2 {
+            height: 23px;
+            width: 40px;
+            border: 2px solid rgb(227, 14, 14);
+            display: flex;
+            flex-wrap: wrap;
+            flex-wrap: wrap-reverse;
+        }
+
+        .container3 {
+            height: 23px;
+            width: 40px;
+            border: 2px solid rgb(9, 224, 232);
+            display: flex;
+            flex-flow: row-reverse wrap-reverse;
+        }
+
+        .container4 {
+            height: 23px;
+            width: 40px;
+            border: 2px solid rgb(193, 9, 150);
+            display: flex;
+            justify-content: center;
+            justify-content: space-between;
+            justify-content: space-evenly;
+            justify-content: space-around;
+            align-items: center;
+            align-items: start;
+            align-items: end;
+            align-items: stretch;
+        }
+#item1
+{
+    order: 2;
+    flex-grow: 3;
+    flex-shrink: 3;
+    flex-basis: 120px;
+}
+#box3
+{
+    align-self: flex-start;
+    align-self: flex-end;
+    align-self: first baseline;
+}
+        .item {
+            background-color: green;
+            border: 2px solid red;
+            margin: 10px;
+            padding: 3px;
+            width: 34px;
+            height: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>this is flex box tutorial</h1>
+   <p> <div class="container1">
+        <div class="item" id="item1"> first box</div>
+        <div class="item" id="item2"> second box</div>
+        <div class="item" id="item3"> third box</div>
+        <div class="item" id="item4"> fourth box</div>
+        <div class="item" id="item5"> fifth box</div>
+        <div class="item" id="item6"> sixth box</div>
+    </div> </p>
+    <br>
+    <hr>
+    <p>
+    <div class="container2">
+        <div class="item" id="item1"> first box</div>
+        <div class="item" id="item2"> second box</div>
+        <div class="item" id="item3"> third box</div>
+        <div class="item" id="item4"> fourth box</div>
+        <div class="item" id="item5"> fifth box</div>
+        <div class="item" id="item6"> sixth box</div>
+    </div><br>
+    <hr>
+    </p>
+    <p>
+    <div class="container3">
+        <div class="item" id="item1"> first box</div>
+        <div class="item" id="item2"> second box</div>
+        <div class="item" id="item3"> third box</div>
+        <div class="item" id="item4"> fourth box</div>
+        <div class="item" id="item5"> fifth box</div>
+        <div class="item" id="item6"> sixth box</div>
+    </div>
+    <hr>
+    </p>
+    <p>
+    <div class="container4">
+        <div class="item" id="item1"> first box</div>
+        <div class="item" id="item2"> second box</div>
+        <div class="item" id="item3"> third box</div>
+        <div class="item" id="item4"> fourth box</div>
+        <div class="item" id="item5"> fifth box</div>
+        <div class="item" id="item6"> sixth box</div>
+    </div><br>
+    <hr>
+    </p>
+</body>
+
+</html>
+<!-- flexbox is a one dimansional layout method for laying out item in rows or colum,ns -->
+<!-- css flexbox is a better way to align items -->
+<!-- into a container -->
+<!-- flexbox = flexible + box -->

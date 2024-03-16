@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> VASIBILITY AND Z- INDEX EXPLAINED</title>
+    <style>
+        .box {
+            width: 170px;
+            height: 170px;
+            border: 2px solid black;
+        }
+
+        #box1 {
+            background-color: green;
+        }
+
+        #box2 {
+            background-color: yellow;
+        }
+
+        #box3 {
+            background-color: skyblue;
+        }
+
+        #box4 {
+            background-color: red;
+            visibility: hidden;
+            display: none;
+        }
+
+        #box5 {
+            background-color: blue;
+            position: relative;
+            top: 49px;
+            z-index: 100px;
+        }
+
+        #box6 {
+            background-color: green;
+            position: relative;
+            top: 39px;
+            z-index: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="box1">apple</div>
+    <div class="box" id="box2">banana</div>
+    <div class="box" id="box3">cherry</div>
+    <div class="box" id="box4">mango</div>
+    <div class="box" id="box5">coffe</div>
+    <div class="box" id="box6">tea</div>
+</body>
+</html>

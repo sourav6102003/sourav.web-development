@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KEYFREMS AND ANIMATION</title>
+    <style>
+        .container {
+            background-color: yellowgreen;
+        }
+
+        .box {
+            background-color: green;
+            width: 250px;
+            height: 250px;
+            position: relative;
+             animation-name: sourav;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-fill-mode: backwards; 
+            /* animation-fill-mode: forwards; */
+            /* animation-timing-function: ease-in; */
+            /* animation-delay: 3s; */
+            /* animation-direction: reverse; */
+            /* animation: sourav  5s infinite ease-in alternate-reverse ;  */
+             animation-name: sourav2 ;
+        }
+
+        @keyframes sourav2 {
+            from {
+                width: 1px;
+            }
+
+            to {
+                width: 1500px;
+            }
+        }
+        @keyframes sourav2
+        {
+            0%
+            {
+              top: 0px;
+              left: 0px;
+            }
+            25%
+            {
+                top: 250px;
+
+                left: 0px;
+            }
+            75%
+            {
+                top: 250px;
+                left: 250px;
+            }
+            100%
+            {
+                top: 0px;
+                left: 250px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">this is box</div>
+
+    </div>
+</body>
+
+</html>

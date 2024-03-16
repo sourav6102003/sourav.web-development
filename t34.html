@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box shadow and text shadow</title>
+    <style>
+        .container {
+            display: flex;
+        }
+
+        .card {
+            padding: 23px 12px;
+            margin: 23px 12px;
+            background-color: burlywood;
+            /* box-shadow: 4px 3px green; */
+        }
+
+        #card-1 {
+            box-shadow: -13px -12px red;
+        }
+
+        #card-3 {
+            box-shadow: 2px 3px 2px 2px yellow;
+        }
+
+        #card-2 {
+            box-shadow: 7px 5px 23px 13px rgba(red, green, rgb(13, 13, 228), 0.3px);
+        }
+
+        #card-4 {
+            box-shadow: inset 3px 5px green;
+        }
+
+        .card h2 {
+            text-shadow: 3px 2px red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card" id="card-1">
+            <h2>card-1</h2>
+        </div>
+        <div class="card" id="card-2">
+            <h2>card-2</h2>
+        </div>
+        <div class="card" id="card-3">
+            <h2>card-3</h2>
+        </div>
+        <div class="card" id="card-4">
+            <h2>card-4</h2>
+        </div>
+    </div>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe dolores vero iusto alias debitis esse accusamus
+        id, laboriosam incidunt ullam, quae illo architecto!</p>
+</body>
+</html>
